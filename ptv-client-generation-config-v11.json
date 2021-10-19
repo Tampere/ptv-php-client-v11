@@ -1,0 +1,12 @@
+{
+"variableNamingConvention": "camelCase",
+"modelPackage": "PtvModel",
+"apiPackage": "PtvApi",
+"invokerPackage": "Tampere\\PtvV11",
+"packagePath": "ptv-php-client-v11",
+"srcBasePath": "src",
+"gitUserId": "Tampere",
+"gitRepoId": "ptv-php-client-v11",
+"hideGenerationTimestamp": false,
+"artifactVersion": "1.0.0"
+}
