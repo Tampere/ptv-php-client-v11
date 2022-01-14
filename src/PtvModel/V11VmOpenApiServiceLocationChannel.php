@@ -84,6 +84,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess
 'displayNameType' => '\Tampere\PtvV11\PtvModel\VmOpenApiNameTypeByLanguage[]',
 'phoneNumbers' => '\Tampere\PtvV11\PtvModel\V4VmOpenApiPhoneWithType[]',
 'supportEmails' => '\Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[]',
+'emails' => '\Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[]',
 'addresses' => '\Tampere\PtvV11\PtvModel\V9VmOpenApiAddressLocation[]',
 'supportPhones' => '\Tampere\PtvV11\PtvModel\V4VmOpenApiPhone[]'    ];
 
@@ -120,6 +121,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess
 'displayNameType' => null,
 'phoneNumbers' => null,
 'supportEmails' => null,
+'emails' => null,
 'addresses' => null,
 'supportPhones' => null    ];
 
@@ -177,6 +179,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess
 'displayNameType' => 'displayNameType',
 'phoneNumbers' => 'phoneNumbers',
 'supportEmails' => 'supportEmails',
+'emails' => 'emails',
 'addresses' => 'addresses',
 'supportPhones' => 'supportPhones'    ];
 
@@ -213,6 +216,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess
 'displayNameType' => 'setDisplayNameType',
 'phoneNumbers' => 'setPhoneNumbers',
 'supportEmails' => 'setSupportEmails',
+'emails' => 'setEmails',
 'addresses' => 'setAddresses',
 'supportPhones' => 'setSupportPhones'    ];
 
@@ -249,6 +253,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess
 'displayNameType' => 'getDisplayNameType',
 'phoneNumbers' => 'getPhoneNumbers',
 'supportEmails' => 'getSupportEmails',
+'emails' => 'getEmails',
 'addresses' => 'getAddresses',
 'supportPhones' => 'getSupportPhones'    ];
 
@@ -337,6 +342,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess
         $this->container['displayNameType'] = isset($data['displayNameType']) ? $data['displayNameType'] : null;
         $this->container['phoneNumbers'] = isset($data['phoneNumbers']) ? $data['phoneNumbers'] : null;
         $this->container['supportEmails'] = isset($data['supportEmails']) ? $data['supportEmails'] : null;
+        $this->container['emails'] = isset($data['emails']) ? $data['emails'] : null;
         $this->container['addresses'] = isset($data['addresses']) ? $data['addresses'] : null;
         $this->container['supportPhones'] = isset($data['supportPhones']) ? $data['supportPhones'] : null;
     }
@@ -1011,6 +1017,30 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess
         $this->container['supportEmails'] = $supportEmails;
 
         return $this;
+    }
+
+    /**
+     * Gets emails
+     *
+     * @return \Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[]
+     */
+    public function getEmails()
+    {
+      return $this->container['emails'];
+    }
+
+    /**
+     * Sets emails
+     *
+     * @param \Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[] $emails List email addresses for the service channel.
+     *
+     * @return $this
+     */
+    public function setEmails($emails)
+    {
+      $this->container['emails'] = $emails;
+
+      return $this;
     }
 
     /**
