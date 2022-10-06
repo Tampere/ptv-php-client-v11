@@ -22,7 +22,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "http://github.com/Tampere/ptv-php-client-v11.git"
+      "url": "https://github.com/Tampere/ptv-php-client-v11.git"
     }
   ],
   "require": {
