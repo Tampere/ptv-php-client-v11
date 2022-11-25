@@ -264,7 +264,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -288,7 +288,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**
@@ -312,7 +312,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -336,7 +336,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getCode()
     {
-        return $this->container['code'];
+        return isset($this->container['code']) ? $this->container['code'] : null;
     }
 
     /**
@@ -360,7 +360,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getOntologyType()
     {
-        return $this->container['ontologyType'];
+        return isset($this->container['ontologyType']) ? $this->container['ontologyType'] : null;
     }
 
     /**
@@ -384,7 +384,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getUri()
     {
-        return $this->container['uri'];
+        return isset($this->container['uri']) ? $this->container['uri'] : null;
     }
 
     /**
@@ -408,7 +408,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getParentId()
     {
-        return $this->container['parentId'];
+        return isset($this->container['parentId']) ? $this->container['parentId'] : null;
     }
 
     /**
@@ -432,7 +432,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getParentUri()
     {
-        return $this->container['parentUri'];
+        return isset($this->container['parentUri']) ? $this->container['parentUri'] : null;
     }
 
     /**
@@ -456,7 +456,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getOverride()
     {
-        return $this->container['override'];
+        return isset($this->container['override']) ? $this->container['override'] : null;
     }
 
     /**
@@ -480,7 +480,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getNewUri()
     {
-        return $this->container['newUri'];
+        return isset($this->container['newUri']) ? $this->container['newUri'] : null;
     }
 
     /**
@@ -504,7 +504,7 @@ class V7VmOpenApiFintoItemWithDescription implements ModelInterface, ArrayAccess
      */
     public function getNewParentUri()
     {
-        return $this->container['newParentUri'];
+        return isset($this->container['newParentUri']) ? $this->container['newParentUri'] : null;
     }
 
     /**

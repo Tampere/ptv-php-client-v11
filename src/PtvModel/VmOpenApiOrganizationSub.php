@@ -216,7 +216,7 @@ class VmOpenApiOrganizationSub implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -240,7 +240,7 @@ class VmOpenApiOrganizationSub implements ModelInterface, ArrayAccess
      */
     public function getOrganizationNames()
     {
-        return $this->container['organizationNames'];
+        return isset($this->container['organizationNames']) ? $this->container['organizationNames'] : null;
     }
 
     /**
@@ -264,7 +264,7 @@ class VmOpenApiOrganizationSub implements ModelInterface, ArrayAccess
      */
     public function getSubOrganizations()
     {
-        return $this->container['subOrganizations'];
+        return isset($this->container['subOrganizations']) ? $this->container['subOrganizations'] : null;
     }
 
     /**

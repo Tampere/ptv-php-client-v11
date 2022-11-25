@@ -228,7 +228,7 @@ class V11VmOpenApiServiceChannels implements ModelInterface, ArrayAccess
      */
     public function getElectronicChannel()
     {
-        return $this->container['electronicChannel'];
+        return isset($this->container['electronicChannel']) ? $this->container['electronicChannel'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class V11VmOpenApiServiceChannels implements ModelInterface, ArrayAccess
      */
     public function getPhoneChannel()
     {
-        return $this->container['phoneChannel'];
+        return isset($this->container['phoneChannel']) ? $this->container['phoneChannel'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class V11VmOpenApiServiceChannels implements ModelInterface, ArrayAccess
      */
     public function getPrintableFormChannel()
     {
-        return $this->container['printableFormChannel'];
+        return isset($this->container['printableFormChannel']) ? $this->container['printableFormChannel'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class V11VmOpenApiServiceChannels implements ModelInterface, ArrayAccess
      */
     public function getLocationChannel()
     {
-        return $this->container['locationChannel'];
+        return isset($this->container['locationChannel']) ? $this->container['locationChannel'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class V11VmOpenApiServiceChannels implements ModelInterface, ArrayAccess
      */
     public function getWebPageChannel()
     {
-        return $this->container['webPageChannel'];
+        return isset($this->container['webPageChannel']) ? $this->container['webPageChannel'] : null;
     }
 
     /**

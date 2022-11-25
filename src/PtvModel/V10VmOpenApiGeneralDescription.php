@@ -321,7 +321,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -345,7 +345,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getSourceId()
     {
-        return $this->container['sourceId'];
+        return isset($this->container['sourceId']) ? $this->container['sourceId'] : null;
     }
 
     /**
@@ -369,7 +369,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getNames()
     {
-        return $this->container['names'];
+        return isset($this->container['names']) ? $this->container['names'] : null;
     }
 
     /**
@@ -393,7 +393,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getDescriptions()
     {
-        return $this->container['descriptions'];
+        return isset($this->container['descriptions']) ? $this->container['descriptions'] : null;
     }
 
     /**
@@ -417,7 +417,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getRequirements()
     {
-        return $this->container['requirements'];
+        return isset($this->container['requirements']) ? $this->container['requirements'] : null;
     }
 
     /**
@@ -441,7 +441,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -465,7 +465,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**
@@ -489,7 +489,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getLegislation()
     {
-        return $this->container['legislation'];
+        return isset($this->container['legislation']) ? $this->container['legislation'] : null;
     }
 
     /**
@@ -513,7 +513,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getGeneralDescriptionType()
     {
-        return $this->container['generalDescriptionType'];
+        return isset($this->container['generalDescriptionType']) ? $this->container['generalDescriptionType'] : null;
     }
 
     /**
@@ -537,7 +537,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getGeneralDescriptionTypeId()
     {
-        return $this->container['generalDescriptionTypeId'];
+        return isset($this->container['generalDescriptionTypeId']) ? $this->container['generalDescriptionTypeId'] : null;
     }
 
     /**
@@ -561,7 +561,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getPublishingStatus()
     {
-        return $this->container['publishingStatus'];
+        return isset($this->container['publishingStatus']) ? $this->container['publishingStatus'] : null;
     }
 
     /**
@@ -585,7 +585,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getAvailableLanguages()
     {
-        return $this->container['availableLanguages'];
+        return isset($this->container['availableLanguages']) ? $this->container['availableLanguages'] : null;
     }
 
     /**
@@ -609,7 +609,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getVersionId()
     {
-        return $this->container['versionId'];
+        return isset($this->container['versionId']) ? $this->container['versionId'] : null;
     }
 
     /**
@@ -633,7 +633,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getServiceClasses()
     {
-        return $this->container['serviceClasses'];
+        return isset($this->container['serviceClasses']) ? $this->container['serviceClasses'] : null;
     }
 
     /**
@@ -657,7 +657,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getOntologyTerms()
     {
-        return $this->container['ontologyTerms'];
+        return isset($this->container['ontologyTerms']) ? $this->container['ontologyTerms'] : null;
     }
 
     /**
@@ -681,7 +681,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getTargetGroups()
     {
-        return $this->container['targetGroups'];
+        return isset($this->container['targetGroups']) ? $this->container['targetGroups'] : null;
     }
 
     /**
@@ -705,7 +705,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getLifeEvents()
     {
-        return $this->container['lifeEvents'];
+        return isset($this->container['lifeEvents']) ? $this->container['lifeEvents'] : null;
     }
 
     /**
@@ -729,7 +729,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getIndustrialClasses()
     {
-        return $this->container['industrialClasses'];
+        return isset($this->container['industrialClasses']) ? $this->container['industrialClasses'] : null;
     }
 
     /**
@@ -753,7 +753,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getModified()
     {
-        return $this->container['modified'];
+        return isset($this->container['modified']) ? $this->container['modified'] : null;
     }
 
     /**
@@ -777,7 +777,7 @@ class V10VmOpenApiGeneralDescription implements ModelInterface, ArrayAccess
      */
     public function getServiceChannels()
     {
-        return $this->container['serviceChannels'];
+        return isset($this->container['serviceChannels']) ? $this->container['serviceChannels'] : null;
     }
 
     /**

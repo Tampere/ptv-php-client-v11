@@ -210,7 +210,7 @@ class VmOpenApiAccessibilitySentence implements ModelInterface, ArrayAccess
      */
     public function getSentenceGroup()
     {
-        return $this->container['sentenceGroup'];
+        return isset($this->container['sentenceGroup']) ? $this->container['sentenceGroup'] : null;
     }
 
     /**
@@ -234,7 +234,7 @@ class VmOpenApiAccessibilitySentence implements ModelInterface, ArrayAccess
      */
     public function getSentences()
     {
-        return $this->container['sentences'];
+        return isset($this->container['sentences']) ? $this->container['sentences'] : null;
     }
 
     /**

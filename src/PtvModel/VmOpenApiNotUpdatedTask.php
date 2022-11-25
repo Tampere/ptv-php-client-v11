@@ -228,7 +228,7 @@ class VmOpenApiNotUpdatedTask implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class VmOpenApiNotUpdatedTask implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class VmOpenApiNotUpdatedTask implements ModelInterface, ArrayAccess
      */
     public function getStatuses()
     {
-        return $this->container['statuses'];
+        return isset($this->container['statuses']) ? $this->container['statuses'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class VmOpenApiNotUpdatedTask implements ModelInterface, ArrayAccess
      */
     public function getModifiedBy()
     {
-        return $this->container['modifiedBy'];
+        return isset($this->container['modifiedBy']) ? $this->container['modifiedBy'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class VmOpenApiNotUpdatedTask implements ModelInterface, ArrayAccess
      */
     public function getModified()
     {
-        return $this->container['modified'];
+        return isset($this->container['modified']) ? $this->container['modified'] : null;
     }
 
     /**

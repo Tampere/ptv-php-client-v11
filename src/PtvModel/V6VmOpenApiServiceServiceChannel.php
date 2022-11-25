@@ -258,7 +258,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**
@@ -282,7 +282,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -306,7 +306,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getIsASTIConnection()
     {
-        return $this->container['isASTIConnection'];
+        return isset($this->container['isASTIConnection']) ? $this->container['isASTIConnection'] : null;
     }
 
     /**
@@ -330,7 +330,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -354,7 +354,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceChannel()
     {
-        return $this->container['serviceChannel'];
+        return isset($this->container['serviceChannel']) ? $this->container['serviceChannel'] : null;
     }
 
     /**
@@ -378,7 +378,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getDigitalAuthorizations()
     {
-        return $this->container['digitalAuthorizations'];
+        return isset($this->container['digitalAuthorizations']) ? $this->container['digitalAuthorizations'] : null;
     }
 
     /**
@@ -402,7 +402,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getExtraTypes()
     {
-        return $this->container['extraTypes'];
+        return isset($this->container['extraTypes']) ? $this->container['extraTypes'] : null;
     }
 
     /**
@@ -426,7 +426,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceHours()
     {
-        return $this->container['serviceHours'];
+        return isset($this->container['serviceHours']) ? $this->container['serviceHours'] : null;
     }
 
     /**
@@ -450,7 +450,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getContactDetails()
     {
-        return $this->container['contactDetails'];
+        return isset($this->container['contactDetails']) ? $this->container['contactDetails'] : null;
     }
 
     /**
@@ -474,7 +474,7 @@ class V6VmOpenApiServiceServiceChannel implements ModelInterface, ArrayAccess
      */
     public function getModified()
     {
-        return $this->container['modified'];
+        return isset($this->container['modified']) ? $this->container['modified'] : null;
     }
 
     /**

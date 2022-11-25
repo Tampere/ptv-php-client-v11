@@ -243,7 +243,7 @@ class V6VmOpenApiServiceOrganization implements ModelInterface, ArrayAccess
      */
     public function getRoleType()
     {
-        return $this->container['roleType'];
+        return isset($this->container['roleType']) ? $this->container['roleType'] : null;
     }
 
     /**
@@ -267,7 +267,7 @@ class V6VmOpenApiServiceOrganization implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -291,7 +291,7 @@ class V6VmOpenApiServiceOrganization implements ModelInterface, ArrayAccess
      */
     public function getOrganization()
     {
-        return $this->container['organization'];
+        return isset($this->container['organization']) ? $this->container['organization'] : null;
     }
 
     /**
@@ -315,7 +315,7 @@ class V6VmOpenApiServiceOrganization implements ModelInterface, ArrayAccess
      */
     public function getProvisionType()
     {
-        return $this->container['provisionType'];
+        return isset($this->container['provisionType']) ? $this->container['provisionType'] : null;
     }
 
     /**
@@ -339,7 +339,7 @@ class V6VmOpenApiServiceOrganization implements ModelInterface, ArrayAccess
      */
     public function getServiceId()
     {
-        return $this->container['serviceId'];
+        return isset($this->container['serviceId']) ? $this->container['serviceId'] : null;
     }
 
     /**
@@ -363,7 +363,7 @@ class V6VmOpenApiServiceOrganization implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -387,7 +387,7 @@ class V6VmOpenApiServiceOrganization implements ModelInterface, ArrayAccess
      */
     public function getOrganizationId()
     {
-        return $this->container['organizationId'];
+        return isset($this->container['organizationId']) ? $this->container['organizationId'] : null;
     }
 
     /**

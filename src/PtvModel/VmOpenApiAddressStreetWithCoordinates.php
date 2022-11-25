@@ -261,7 +261,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -285,7 +285,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getPostalCode()
     {
-        return $this->container['postalCode'];
+        return isset($this->container['postalCode']) ? $this->container['postalCode'] : null;
     }
 
     /**
@@ -309,7 +309,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getPostOffice()
     {
-        return $this->container['postOffice'];
+        return isset($this->container['postOffice']) ? $this->container['postOffice'] : null;
     }
 
     /**
@@ -333,7 +333,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getMunicipality()
     {
-        return $this->container['municipality'];
+        return isset($this->container['municipality']) ? $this->container['municipality'] : null;
     }
 
     /**
@@ -357,7 +357,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -381,7 +381,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getStreet()
     {
-        return $this->container['street'];
+        return isset($this->container['street']) ? $this->container['street'] : null;
     }
 
     /**
@@ -405,7 +405,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getStreetNumber()
     {
-        return $this->container['streetNumber'];
+        return isset($this->container['streetNumber']) ? $this->container['streetNumber'] : null;
     }
 
     /**
@@ -429,7 +429,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getLatitude()
     {
-        return $this->container['latitude'];
+        return isset($this->container['latitude']) ? $this->container['latitude'] : null;
     }
 
     /**
@@ -453,7 +453,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getLongitude()
     {
-        return $this->container['longitude'];
+        return isset($this->container['longitude']) ? $this->container['longitude'] : null;
     }
 
     /**
@@ -477,7 +477,7 @@ class VmOpenApiAddressStreetWithCoordinates implements ModelInterface, ArrayAcce
      */
     public function getCoordinateState()
     {
-        return $this->container['coordinateState'];
+        return isset($this->container['coordinateState']) ? $this->container['coordinateState'] : null;
     }
 
     /**

@@ -399,7 +399,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getSourceId()
     {
-        return $this->container['sourceId'];
+        return isset($this->container['sourceId']) ? $this->container['sourceId'] : null;
     }
 
     /**
@@ -423,7 +423,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getBusinessCode()
     {
-        return $this->container['businessCode'];
+        return isset($this->container['businessCode']) ? $this->container['businessCode'] : null;
     }
 
     /**
@@ -447,7 +447,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getBusinessName()
     {
-        return $this->container['businessName'];
+        return isset($this->container['businessName']) ? $this->container['businessName'] : null;
     }
 
     /**
@@ -471,7 +471,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getEmails()
     {
-        return $this->container['emails'];
+        return isset($this->container['emails']) ? $this->container['emails'] : null;
     }
 
     /**
@@ -495,7 +495,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getWebPages()
     {
-        return $this->container['webPages'];
+        return isset($this->container['webPages']) ? $this->container['webPages'] : null;
     }
 
     /**
@@ -519,7 +519,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getElectronicInvoicings()
     {
-        return $this->container['electronicInvoicings'];
+        return isset($this->container['electronicInvoicings']) ? $this->container['electronicInvoicings'] : null;
     }
 
     /**
@@ -543,7 +543,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getBusinessId()
     {
-        return $this->container['businessId'];
+        return isset($this->container['businessId']) ? $this->container['businessId'] : null;
     }
 
     /**
@@ -567,7 +567,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getVersionId()
     {
-        return $this->container['versionId'];
+        return isset($this->container['versionId']) ? $this->container['versionId'] : null;
     }
 
     /**
@@ -591,7 +591,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getOid()
     {
-        return $this->container['oid'];
+        return isset($this->container['oid']) ? $this->container['oid'] : null;
     }
 
     /**
@@ -615,7 +615,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getMunicipality()
     {
-        return $this->container['municipality'];
+        return isset($this->container['municipality']) ? $this->container['municipality'] : null;
     }
 
     /**
@@ -639,7 +639,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getAddresses()
     {
-        return $this->container['addresses'];
+        return isset($this->container['addresses']) ? $this->container['addresses'] : null;
     }
 
     /**
@@ -663,7 +663,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getParentOrganizationId()
     {
-        return $this->container['parentOrganizationId'];
+        return isset($this->container['parentOrganizationId']) ? $this->container['parentOrganizationId'] : null;
     }
 
     /**
@@ -687,7 +687,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllEmails()
     {
-        return $this->container['deleteAllEmails'];
+        return isset($this->container['deleteAllEmails']) ? $this->container['deleteAllEmails'] : null;
     }
 
     /**
@@ -711,7 +711,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllPhones()
     {
-        return $this->container['deleteAllPhones'];
+        return isset($this->container['deleteAllPhones']) ? $this->container['deleteAllPhones'] : null;
     }
 
     /**
@@ -735,7 +735,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllWebPages()
     {
-        return $this->container['deleteAllWebPages'];
+        return isset($this->container['deleteAllWebPages']) ? $this->container['deleteAllWebPages'] : null;
     }
 
     /**
@@ -759,7 +759,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllAddresses()
     {
-        return $this->container['deleteAllAddresses'];
+        return isset($this->container['deleteAllAddresses']) ? $this->container['deleteAllAddresses'] : null;
     }
 
     /**
@@ -783,7 +783,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllElectronicInvoicings()
     {
-        return $this->container['deleteAllElectronicInvoicings'];
+        return isset($this->container['deleteAllElectronicInvoicings']) ? $this->container['deleteAllElectronicInvoicings'] : null;
     }
 
     /**
@@ -807,7 +807,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getValidFrom()
     {
-        return $this->container['validFrom'];
+        return isset($this->container['validFrom']) ? $this->container['validFrom'] : null;
     }
 
     /**
@@ -831,7 +831,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getValidTo()
     {
-        return $this->container['validTo'];
+        return isset($this->container['validTo']) ? $this->container['validTo'] : null;
     }
 
     /**
@@ -855,7 +855,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -879,7 +879,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getCurrentPublishingStatus()
     {
-        return $this->container['currentPublishingStatus'];
+        return isset($this->container['currentPublishingStatus']) ? $this->container['currentPublishingStatus'] : null;
     }
 
     /**
@@ -903,7 +903,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getUserName()
     {
-        return $this->container['userName'];
+        return isset($this->container['userName']) ? $this->container['userName'] : null;
     }
 
     /**
@@ -927,7 +927,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getAvailableLanguages()
     {
-        return $this->container['availableLanguages'];
+        return isset($this->container['availableLanguages']) ? $this->container['availableLanguages'] : null;
     }
 
     /**
@@ -951,7 +951,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getRequiredPropertiesAvailableLanguages()
     {
-        return $this->container['requiredPropertiesAvailableLanguages'];
+        return isset($this->container['requiredPropertiesAvailableLanguages']) ? $this->container['requiredPropertiesAvailableLanguages'] : null;
     }
 
     /**
@@ -975,7 +975,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getOrganizationNames()
     {
-        return $this->container['organizationNames'];
+        return isset($this->container['organizationNames']) ? $this->container['organizationNames'] : null;
     }
 
     /**
@@ -999,7 +999,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getOrganizationDescriptions()
     {
-        return $this->container['organizationDescriptions'];
+        return isset($this->container['organizationDescriptions']) ? $this->container['organizationDescriptions'] : null;
     }
 
     /**
@@ -1023,7 +1023,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getDisplayNameType()
     {
-        return $this->container['displayNameType'];
+        return isset($this->container['displayNameType']) ? $this->container['displayNameType'] : null;
     }
 
     /**
@@ -1047,7 +1047,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getOrganizationType()
     {
-        return $this->container['organizationType'];
+        return isset($this->container['organizationType']) ? $this->container['organizationType'] : null;
     }
 
     /**
@@ -1071,7 +1071,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getAreaType()
     {
-        return $this->container['areaType'];
+        return isset($this->container['areaType']) ? $this->container['areaType'] : null;
     }
 
     /**
@@ -1095,7 +1095,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getSubAreaType()
     {
-        return $this->container['subAreaType'];
+        return isset($this->container['subAreaType']) ? $this->container['subAreaType'] : null;
     }
 
     /**
@@ -1119,7 +1119,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getAreas()
     {
-        return $this->container['areas'];
+        return isset($this->container['areas']) ? $this->container['areas'] : null;
     }
 
     /**
@@ -1143,7 +1143,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getPhoneNumbers()
     {
-        return $this->container['phoneNumbers'];
+        return isset($this->container['phoneNumbers']) ? $this->container['phoneNumbers'] : null;
     }
 
     /**
@@ -1167,7 +1167,7 @@ class V9VmOpenApiOrganizationInBase implements ModelInterface, ArrayAccess
      */
     public function getPublishingStatus()
     {
-        return $this->container['publishingStatus'];
+        return isset($this->container['publishingStatus']) ? $this->container['publishingStatus'] : null;
     }
 
     /**

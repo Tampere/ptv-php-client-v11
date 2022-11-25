@@ -231,7 +231,7 @@ class V4VmOpenApiLaw implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -255,7 +255,7 @@ class V4VmOpenApiLaw implements ModelInterface, ArrayAccess
      */
     public function getNames()
     {
-        return $this->container['names'];
+        return isset($this->container['names']) ? $this->container['names'] : null;
     }
 
     /**
@@ -279,7 +279,7 @@ class V4VmOpenApiLaw implements ModelInterface, ArrayAccess
      */
     public function getWebPages()
     {
-        return $this->container['webPages'];
+        return isset($this->container['webPages']) ? $this->container['webPages'] : null;
     }
 
     /**
@@ -303,7 +303,7 @@ class V4VmOpenApiLaw implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -327,7 +327,7 @@ class V4VmOpenApiLaw implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**

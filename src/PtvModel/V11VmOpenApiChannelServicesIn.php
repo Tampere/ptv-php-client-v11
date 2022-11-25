@@ -216,7 +216,7 @@ class V11VmOpenApiChannelServicesIn implements ModelInterface, ArrayAccess
      */
     public function getChannelId()
     {
-        return $this->container['channelId'];
+        return isset($this->container['channelId']) ? $this->container['channelId'] : null;
     }
 
     /**
@@ -240,7 +240,7 @@ class V11VmOpenApiChannelServicesIn implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllServiceRelations()
     {
-        return $this->container['deleteAllServiceRelations'];
+        return isset($this->container['deleteAllServiceRelations']) ? $this->container['deleteAllServiceRelations'] : null;
     }
 
     /**
@@ -264,7 +264,7 @@ class V11VmOpenApiChannelServicesIn implements ModelInterface, ArrayAccess
      */
     public function getServiceRelations()
     {
-        return $this->container['serviceRelations'];
+        return isset($this->container['serviceRelations']) ? $this->container['serviceRelations'] : null;
     }
 
     /**

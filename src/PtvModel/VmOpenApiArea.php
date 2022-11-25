@@ -228,7 +228,7 @@ class VmOpenApiArea implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class VmOpenApiArea implements ModelInterface, ArrayAccess
      */
     public function getCode()
     {
-        return $this->container['code'];
+        return isset($this->container['code']) ? $this->container['code'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class VmOpenApiArea implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class VmOpenApiArea implements ModelInterface, ArrayAccess
      */
     public function getMunicipalities()
     {
-        return $this->container['municipalities'];
+        return isset($this->container['municipalities']) ? $this->container['municipalities'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class VmOpenApiArea implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**

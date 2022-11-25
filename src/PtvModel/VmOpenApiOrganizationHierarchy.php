@@ -222,7 +222,7 @@ class VmOpenApiOrganizationHierarchy implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -246,7 +246,7 @@ class VmOpenApiOrganizationHierarchy implements ModelInterface, ArrayAccess
      */
     public function getOrganizationNames()
     {
-        return $this->container['organizationNames'];
+        return isset($this->container['organizationNames']) ? $this->container['organizationNames'] : null;
     }
 
     /**
@@ -270,7 +270,7 @@ class VmOpenApiOrganizationHierarchy implements ModelInterface, ArrayAccess
      */
     public function getParent()
     {
-        return $this->container['parent'];
+        return isset($this->container['parent']) ? $this->container['parent'] : null;
     }
 
     /**
@@ -294,7 +294,7 @@ class VmOpenApiOrganizationHierarchy implements ModelInterface, ArrayAccess
      */
     public function getSubOrganizations()
     {
-        return $this->container['subOrganizations'];
+        return isset($this->container['subOrganizations']) ? $this->container['subOrganizations'] : null;
     }
 
     /**

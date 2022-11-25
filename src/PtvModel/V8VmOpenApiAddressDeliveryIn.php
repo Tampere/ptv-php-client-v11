@@ -243,7 +243,7 @@ class V8VmOpenApiAddressDeliveryIn implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -267,7 +267,7 @@ class V8VmOpenApiAddressDeliveryIn implements ModelInterface, ArrayAccess
      */
     public function getSubType()
     {
-        return $this->container['subType'];
+        return isset($this->container['subType']) ? $this->container['subType'] : null;
     }
 
     /**
@@ -291,7 +291,7 @@ class V8VmOpenApiAddressDeliveryIn implements ModelInterface, ArrayAccess
      */
     public function getPostOfficeBoxAddress()
     {
-        return $this->container['postOfficeBoxAddress'];
+        return isset($this->container['postOfficeBoxAddress']) ? $this->container['postOfficeBoxAddress'] : null;
     }
 
     /**
@@ -315,7 +315,7 @@ class V8VmOpenApiAddressDeliveryIn implements ModelInterface, ArrayAccess
      */
     public function getStreetAddress()
     {
-        return $this->container['streetAddress'];
+        return isset($this->container['streetAddress']) ? $this->container['streetAddress'] : null;
     }
 
     /**
@@ -339,7 +339,7 @@ class V8VmOpenApiAddressDeliveryIn implements ModelInterface, ArrayAccess
      */
     public function getDeliveryAddressInText()
     {
-        return $this->container['deliveryAddressInText'];
+        return isset($this->container['deliveryAddressInText']) ? $this->container['deliveryAddressInText'] : null;
     }
 
     /**
@@ -363,7 +363,7 @@ class V8VmOpenApiAddressDeliveryIn implements ModelInterface, ArrayAccess
      */
     public function getFormReceiver()
     {
-        return $this->container['formReceiver'];
+        return isset($this->container['formReceiver']) ? $this->container['formReceiver'] : null;
     }
 
     /**
@@ -387,7 +387,7 @@ class V8VmOpenApiAddressDeliveryIn implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**

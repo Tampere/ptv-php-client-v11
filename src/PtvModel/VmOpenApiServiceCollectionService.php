@@ -228,7 +228,7 @@ class VmOpenApiServiceCollectionService implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class VmOpenApiServiceCollectionService implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class VmOpenApiServiceCollectionService implements ModelInterface, ArrayAccess
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class VmOpenApiServiceCollectionService implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class VmOpenApiServiceCollectionService implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**

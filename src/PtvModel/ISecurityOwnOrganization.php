@@ -210,7 +210,7 @@ class ISecurityOwnOrganization implements ModelInterface, ArrayAccess
      */
     public function getIsOwnOrganization()
     {
-        return $this->container['isOwnOrganization'];
+        return isset($this->container['isOwnOrganization']) ? $this->container['isOwnOrganization'] : null;
     }
 
     /**
@@ -234,7 +234,7 @@ class ISecurityOwnOrganization implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**

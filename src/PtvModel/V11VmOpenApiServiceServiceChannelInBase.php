@@ -261,7 +261,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getServiceChannelId()
     {
-        return $this->container['serviceChannelId'];
+        return isset($this->container['serviceChannelId']) ? $this->container['serviceChannelId'] : null;
     }
 
     /**
@@ -285,7 +285,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**
@@ -309,7 +309,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -333,7 +333,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getServiceHours()
     {
-        return $this->container['serviceHours'];
+        return isset($this->container['serviceHours']) ? $this->container['serviceHours'] : null;
     }
 
     /**
@@ -357,7 +357,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getContactDetails()
     {
-        return $this->container['contactDetails'];
+        return isset($this->container['contactDetails']) ? $this->container['contactDetails'] : null;
     }
 
     /**
@@ -381,7 +381,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getDeleteServiceChargeType()
     {
-        return $this->container['deleteServiceChargeType'];
+        return isset($this->container['deleteServiceChargeType']) ? $this->container['deleteServiceChargeType'] : null;
     }
 
     /**
@@ -405,7 +405,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getDeleteAllDescriptions()
     {
-        return $this->container['deleteAllDescriptions'];
+        return isset($this->container['deleteAllDescriptions']) ? $this->container['deleteAllDescriptions'] : null;
     }
 
     /**
@@ -429,7 +429,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getDeleteAllServiceHours()
     {
-        return $this->container['deleteAllServiceHours'];
+        return isset($this->container['deleteAllServiceHours']) ? $this->container['deleteAllServiceHours'] : null;
     }
 
     /**
@@ -453,7 +453,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getServiceGuid()
     {
-        return $this->container['serviceGuid'];
+        return isset($this->container['serviceGuid']) ? $this->container['serviceGuid'] : null;
     }
 
     /**
@@ -477,7 +477,7 @@ class V11VmOpenApiServiceServiceChannelInBase implements ModelInterface, ArrayAc
      */
     public function getChannelGuid()
     {
-        return $this->container['channelGuid'];
+        return isset($this->container['channelGuid']) ? $this->container['channelGuid'] : null;
     }
 
     /**

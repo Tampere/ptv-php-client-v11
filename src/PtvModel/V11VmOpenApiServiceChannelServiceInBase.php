@@ -279,7 +279,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getServiceId()
     {
-        return $this->container['serviceId'];
+        return isset($this->container['serviceId']) ? $this->container['serviceId'] : null;
     }
 
     /**
@@ -303,7 +303,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**
@@ -327,7 +327,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -351,7 +351,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getExtraTypes()
     {
-        return $this->container['extraTypes'];
+        return isset($this->container['extraTypes']) ? $this->container['extraTypes'] : null;
     }
 
     /**
@@ -375,7 +375,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getServiceHours()
     {
-        return $this->container['serviceHours'];
+        return isset($this->container['serviceHours']) ? $this->container['serviceHours'] : null;
     }
 
     /**
@@ -399,7 +399,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getContactDetails()
     {
-        return $this->container['contactDetails'];
+        return isset($this->container['contactDetails']) ? $this->container['contactDetails'] : null;
     }
 
     /**
@@ -423,7 +423,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getDeleteServiceChargeType()
     {
-        return $this->container['deleteServiceChargeType'];
+        return isset($this->container['deleteServiceChargeType']) ? $this->container['deleteServiceChargeType'] : null;
     }
 
     /**
@@ -447,7 +447,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getDeleteAllDescriptions()
     {
-        return $this->container['deleteAllDescriptions'];
+        return isset($this->container['deleteAllDescriptions']) ? $this->container['deleteAllDescriptions'] : null;
     }
 
     /**
@@ -471,7 +471,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getDeleteAllExtraTypes()
     {
-        return $this->container['deleteAllExtraTypes'];
+        return isset($this->container['deleteAllExtraTypes']) ? $this->container['deleteAllExtraTypes'] : null;
     }
 
     /**
@@ -495,7 +495,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getDeleteAllServiceHours()
     {
-        return $this->container['deleteAllServiceHours'];
+        return isset($this->container['deleteAllServiceHours']) ? $this->container['deleteAllServiceHours'] : null;
     }
 
     /**
@@ -519,7 +519,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getServiceGuid()
     {
-        return $this->container['serviceGuid'];
+        return isset($this->container['serviceGuid']) ? $this->container['serviceGuid'] : null;
     }
 
     /**
@@ -543,7 +543,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getChannelGuid()
     {
-        return $this->container['channelGuid'];
+        return isset($this->container['channelGuid']) ? $this->container['channelGuid'] : null;
     }
 
     /**
@@ -567,7 +567,7 @@ class V11VmOpenApiServiceChannelServiceInBase implements ModelInterface, ArrayAc
      */
     public function getIsASTIConnection()
     {
-        return $this->container['isASTIConnection'];
+        return isset($this->container['isASTIConnection']) ? $this->container['isASTIConnection'] : null;
     }
 
     /**

@@ -228,7 +228,7 @@ class VmOpenApiOrganizationEInvoicing implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class VmOpenApiOrganizationEInvoicing implements ModelInterface, ArrayAccess
      */
     public function getOperatorCode()
     {
-        return $this->container['operatorCode'];
+        return isset($this->container['operatorCode']) ? $this->container['operatorCode'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class VmOpenApiOrganizationEInvoicing implements ModelInterface, ArrayAccess
      */
     public function getElectronicInvoicingAddress()
     {
-        return $this->container['electronicInvoicingAddress'];
+        return isset($this->container['electronicInvoicingAddress']) ? $this->container['electronicInvoicingAddress'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class VmOpenApiOrganizationEInvoicing implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class VmOpenApiOrganizationEInvoicing implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**

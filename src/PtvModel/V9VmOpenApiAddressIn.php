@@ -270,7 +270,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -294,7 +294,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getPostOfficeBoxAddress()
     {
-        return $this->container['postOfficeBoxAddress'];
+        return isset($this->container['postOfficeBoxAddress']) ? $this->container['postOfficeBoxAddress'] : null;
     }
 
     /**
@@ -318,7 +318,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getStreetAddress()
     {
-        return $this->container['streetAddress'];
+        return isset($this->container['streetAddress']) ? $this->container['streetAddress'] : null;
     }
 
     /**
@@ -342,7 +342,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getCountry()
     {
-        return $this->container['country'];
+        return isset($this->container['country']) ? $this->container['country'] : null;
     }
 
     /**
@@ -366,7 +366,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -390,7 +390,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getUniqueId()
     {
-        return $this->container['uniqueId'];
+        return isset($this->container['uniqueId']) ? $this->container['uniqueId'] : null;
     }
 
     /**
@@ -414,7 +414,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -438,7 +438,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getSubType()
     {
-        return $this->container['subType'];
+        return isset($this->container['subType']) ? $this->container['subType'] : null;
     }
 
     /**
@@ -462,7 +462,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getOtherAddress()
     {
-        return $this->container['otherAddress'];
+        return isset($this->container['otherAddress']) ? $this->container['otherAddress'] : null;
     }
 
     /**
@@ -486,7 +486,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getForeignAddress()
     {
-        return $this->container['foreignAddress'];
+        return isset($this->container['foreignAddress']) ? $this->container['foreignAddress'] : null;
     }
 
     /**
@@ -510,7 +510,7 @@ class V9VmOpenApiAddressIn implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**

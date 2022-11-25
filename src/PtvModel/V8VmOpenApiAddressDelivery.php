@@ -228,7 +228,7 @@ class V8VmOpenApiAddressDelivery implements ModelInterface, ArrayAccess
      */
     public function getSubType()
     {
-        return $this->container['subType'];
+        return isset($this->container['subType']) ? $this->container['subType'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class V8VmOpenApiAddressDelivery implements ModelInterface, ArrayAccess
      */
     public function getPostOfficeBoxAddress()
     {
-        return $this->container['postOfficeBoxAddress'];
+        return isset($this->container['postOfficeBoxAddress']) ? $this->container['postOfficeBoxAddress'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class V8VmOpenApiAddressDelivery implements ModelInterface, ArrayAccess
      */
     public function getStreetAddress()
     {
-        return $this->container['streetAddress'];
+        return isset($this->container['streetAddress']) ? $this->container['streetAddress'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class V8VmOpenApiAddressDelivery implements ModelInterface, ArrayAccess
      */
     public function getDeliveryAddressInText()
     {
-        return $this->container['deliveryAddressInText'];
+        return isset($this->container['deliveryAddressInText']) ? $this->container['deliveryAddressInText'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class V8VmOpenApiAddressDelivery implements ModelInterface, ArrayAccess
      */
     public function getReceiver()
     {
-        return $this->container['receiver'];
+        return isset($this->container['receiver']) ? $this->container['receiver'] : null;
     }
 
     /**

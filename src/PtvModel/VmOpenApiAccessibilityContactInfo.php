@@ -216,7 +216,7 @@ class VmOpenApiAccessibilityContactInfo implements ModelInterface, ArrayAccess
      */
     public function getPhone()
     {
-        return $this->container['phone'];
+        return isset($this->container['phone']) ? $this->container['phone'] : null;
     }
 
     /**
@@ -240,7 +240,7 @@ class VmOpenApiAccessibilityContactInfo implements ModelInterface, ArrayAccess
      */
     public function getEmail()
     {
-        return $this->container['email'];
+        return isset($this->container['email']) ? $this->container['email'] : null;
     }
 
     /**
@@ -264,7 +264,7 @@ class VmOpenApiAccessibilityContactInfo implements ModelInterface, ArrayAccess
      */
     public function getUrl()
     {
-        return $this->container['url'];
+        return isset($this->container['url']) ? $this->container['url'] : null;
     }
 
     /**

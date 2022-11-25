@@ -372,7 +372,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -396,7 +396,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getOid()
     {
-        return $this->container['oid'];
+        return isset($this->container['oid']) ? $this->container['oid'] : null;
     }
 
     /**
@@ -420,7 +420,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getSourceId()
     {
-        return $this->container['sourceId'];
+        return isset($this->container['sourceId']) ? $this->container['sourceId'] : null;
     }
 
     /**
@@ -444,7 +444,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getOrganizationType()
     {
-        return $this->container['organizationType'];
+        return isset($this->container['organizationType']) ? $this->container['organizationType'] : null;
     }
 
     /**
@@ -468,7 +468,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getBusinessCode()
     {
-        return $this->container['businessCode'];
+        return isset($this->container['businessCode']) ? $this->container['businessCode'] : null;
     }
 
     /**
@@ -492,7 +492,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getBusinessName()
     {
-        return $this->container['businessName'];
+        return isset($this->container['businessName']) ? $this->container['businessName'] : null;
     }
 
     /**
@@ -516,7 +516,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getOrganizationNames()
     {
-        return $this->container['organizationNames'];
+        return isset($this->container['organizationNames']) ? $this->container['organizationNames'] : null;
     }
 
     /**
@@ -540,7 +540,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getDisplayNameType()
     {
-        return $this->container['displayNameType'];
+        return isset($this->container['displayNameType']) ? $this->container['displayNameType'] : null;
     }
 
     /**
@@ -564,7 +564,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getAreaType()
     {
-        return $this->container['areaType'];
+        return isset($this->container['areaType']) ? $this->container['areaType'] : null;
     }
 
     /**
@@ -588,7 +588,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getOrganizationDescriptions()
     {
-        return $this->container['organizationDescriptions'];
+        return isset($this->container['organizationDescriptions']) ? $this->container['organizationDescriptions'] : null;
     }
 
     /**
@@ -612,7 +612,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getEmails()
     {
-        return $this->container['emails'];
+        return isset($this->container['emails']) ? $this->container['emails'] : null;
     }
 
     /**
@@ -636,7 +636,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getPhoneNumbers()
     {
-        return $this->container['phoneNumbers'];
+        return isset($this->container['phoneNumbers']) ? $this->container['phoneNumbers'] : null;
     }
 
     /**
@@ -660,7 +660,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getWebPages()
     {
-        return $this->container['webPages'];
+        return isset($this->container['webPages']) ? $this->container['webPages'] : null;
     }
 
     /**
@@ -684,7 +684,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getElectronicInvoicings()
     {
-        return $this->container['electronicInvoicings'];
+        return isset($this->container['electronicInvoicings']) ? $this->container['electronicInvoicings'] : null;
     }
 
     /**
@@ -708,7 +708,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getBusinessId()
     {
-        return $this->container['businessId'];
+        return isset($this->container['businessId']) ? $this->container['businessId'] : null;
     }
 
     /**
@@ -732,7 +732,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getVersionId()
     {
-        return $this->container['versionId'];
+        return isset($this->container['versionId']) ? $this->container['versionId'] : null;
     }
 
     /**
@@ -756,7 +756,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getParentOrganizationId()
     {
-        return $this->container['parentOrganizationId'];
+        return isset($this->container['parentOrganizationId']) ? $this->container['parentOrganizationId'] : null;
     }
 
     /**
@@ -780,7 +780,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getOrganizationRootId()
     {
-        return $this->container['organizationRootId'];
+        return isset($this->container['organizationRootId']) ? $this->container['organizationRootId'] : null;
     }
 
     /**
@@ -804,7 +804,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getMunicipality()
     {
-        return $this->container['municipality'];
+        return isset($this->container['municipality']) ? $this->container['municipality'] : null;
     }
 
     /**
@@ -828,7 +828,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getAreas()
     {
-        return $this->container['areas'];
+        return isset($this->container['areas']) ? $this->container['areas'] : null;
     }
 
     /**
@@ -852,7 +852,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getAreaMunicipalities()
     {
-        return $this->container['areaMunicipalities'];
+        return isset($this->container['areaMunicipalities']) ? $this->container['areaMunicipalities'] : null;
     }
 
     /**
@@ -876,7 +876,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getAddresses()
     {
-        return $this->container['addresses'];
+        return isset($this->container['addresses']) ? $this->container['addresses'] : null;
     }
 
     /**
@@ -900,7 +900,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getPublishingStatus()
     {
-        return $this->container['publishingStatus'];
+        return isset($this->container['publishingStatus']) ? $this->container['publishingStatus'] : null;
     }
 
     /**
@@ -924,7 +924,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getServices()
     {
-        return $this->container['services'];
+        return isset($this->container['services']) ? $this->container['services'] : null;
     }
 
     /**
@@ -948,7 +948,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getResponsibleOrganizationServices()
     {
-        return $this->container['responsibleOrganizationServices'];
+        return isset($this->container['responsibleOrganizationServices']) ? $this->container['responsibleOrganizationServices'] : null;
     }
 
     /**
@@ -972,7 +972,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getProducerOrganizationServices()
     {
-        return $this->container['producerOrganizationServices'];
+        return isset($this->container['producerOrganizationServices']) ? $this->container['producerOrganizationServices'] : null;
     }
 
     /**
@@ -996,7 +996,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getModified()
     {
-        return $this->container['modified'];
+        return isset($this->container['modified']) ? $this->container['modified'] : null;
     }
 
     /**
@@ -1020,7 +1020,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getSubOrganizations()
     {
-        return $this->container['subOrganizations'];
+        return isset($this->container['subOrganizations']) ? $this->container['subOrganizations'] : null;
     }
 
     /**
@@ -1044,7 +1044,7 @@ class V10VmOpenApiOrganization implements ModelInterface, ArrayAccess
      */
     public function getAvailableLanguages()
     {
-        return $this->container['availableLanguages'];
+        return isset($this->container['availableLanguages']) ? $this->container['availableLanguages'] : null;
     }
 
     /**

@@ -210,7 +210,7 @@ class VmOpenApiMunicipality implements ModelInterface, ArrayAccess
      */
     public function getCode()
     {
-        return $this->container['code'];
+        return isset($this->container['code']) ? $this->container['code'] : null;
     }
 
     /**
@@ -234,7 +234,7 @@ class VmOpenApiMunicipality implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**

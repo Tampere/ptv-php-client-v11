@@ -210,7 +210,7 @@ class V11VmOpenApiServiceAndChannelRelationBySourceAsti implements ModelInterfac
      */
     public function getDeleteAllChannelRelations()
     {
-        return $this->container['deleteAllChannelRelations'];
+        return isset($this->container['deleteAllChannelRelations']) ? $this->container['deleteAllChannelRelations'] : null;
     }
 
     /**
@@ -234,7 +234,7 @@ class V11VmOpenApiServiceAndChannelRelationBySourceAsti implements ModelInterfac
      */
     public function getChannelRelations()
     {
-        return $this->container['channelRelations'];
+        return isset($this->container['channelRelations']) ? $this->container['channelRelations'] : null;
     }
 
     /**

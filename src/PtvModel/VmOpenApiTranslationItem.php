@@ -282,7 +282,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getOrganizationId()
     {
-        return $this->container['organizationId'];
+        return isset($this->container['organizationId']) ? $this->container['organizationId'] : null;
     }
 
     /**
@@ -306,7 +306,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getOrganizationName()
     {
-        return $this->container['organizationName'];
+        return isset($this->container['organizationName']) ? $this->container['organizationName'] : null;
     }
 
     /**
@@ -330,7 +330,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getBusinessCode()
     {
-        return $this->container['businessCode'];
+        return isset($this->container['businessCode']) ? $this->container['businessCode'] : null;
     }
 
     /**
@@ -354,7 +354,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getOrderer()
     {
-        return $this->container['orderer'];
+        return isset($this->container['orderer']) ? $this->container['orderer'] : null;
     }
 
     /**
@@ -378,7 +378,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getOrderId()
     {
-        return $this->container['orderId'];
+        return isset($this->container['orderId']) ? $this->container['orderId'] : null;
     }
 
     /**
@@ -402,7 +402,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getOrderState()
     {
-        return $this->container['orderState'];
+        return isset($this->container['orderState']) ? $this->container['orderState'] : null;
     }
 
     /**
@@ -426,7 +426,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getOrderDate()
     {
-        return $this->container['orderDate'];
+        return isset($this->container['orderDate']) ? $this->container['orderDate'] : null;
     }
 
     /**
@@ -450,7 +450,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getOrderResolvedDate()
     {
-        return $this->container['orderResolvedDate'];
+        return isset($this->container['orderResolvedDate']) ? $this->container['orderResolvedDate'] : null;
     }
 
     /**
@@ -474,7 +474,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getSourceLanguage()
     {
-        return $this->container['sourceLanguage'];
+        return isset($this->container['sourceLanguage']) ? $this->container['sourceLanguage'] : null;
     }
 
     /**
@@ -498,7 +498,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getSourceLanguageCharAmount()
     {
-        return $this->container['sourceLanguageCharAmount'];
+        return isset($this->container['sourceLanguageCharAmount']) ? $this->container['sourceLanguageCharAmount'] : null;
     }
 
     /**
@@ -522,7 +522,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getTargetLanguage()
     {
-        return $this->container['targetLanguage'];
+        return isset($this->container['targetLanguage']) ? $this->container['targetLanguage'] : null;
     }
 
     /**
@@ -546,7 +546,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -570,7 +570,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getItemId()
     {
-        return $this->container['itemId'];
+        return isset($this->container['itemId']) ? $this->container['itemId'] : null;
     }
 
     /**
@@ -594,7 +594,7 @@ class VmOpenApiTranslationItem implements ModelInterface, ArrayAccess
      */
     public function getItemName()
     {
-        return $this->container['itemName'];
+        return isset($this->container['itemName']) ? $this->container['itemName'] : null;
     }
 
     /**

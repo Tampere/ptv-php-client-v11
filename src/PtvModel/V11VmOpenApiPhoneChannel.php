@@ -354,7 +354,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -378,7 +378,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getSourceId()
     {
-        return $this->container['sourceId'];
+        return isset($this->container['sourceId']) ? $this->container['sourceId'] : null;
     }
 
     /**
@@ -402,7 +402,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceChannelDescriptions()
     {
-        return $this->container['serviceChannelDescriptions'];
+        return isset($this->container['serviceChannelDescriptions']) ? $this->container['serviceChannelDescriptions'] : null;
     }
 
     /**
@@ -426,7 +426,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getAreaType()
     {
-        return $this->container['areaType'];
+        return isset($this->container['areaType']) ? $this->container['areaType'] : null;
     }
 
     /**
@@ -450,7 +450,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getSupportEmails()
     {
-        return $this->container['supportEmails'];
+        return isset($this->container['supportEmails']) ? $this->container['supportEmails'] : null;
     }
 
     /**
@@ -474,7 +474,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getLanguages()
     {
-        return $this->container['languages'];
+        return isset($this->container['languages']) ? $this->container['languages'] : null;
     }
 
     /**
@@ -498,7 +498,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getWebPages()
     {
-        return $this->container['webPages'];
+        return isset($this->container['webPages']) ? $this->container['webPages'] : null;
     }
 
     /**
@@ -522,7 +522,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceHours()
     {
-        return $this->container['serviceHours'];
+        return isset($this->container['serviceHours']) ? $this->container['serviceHours'] : null;
     }
 
     /**
@@ -546,7 +546,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getChannelId()
     {
-        return $this->container['channelId'];
+        return isset($this->container['channelId']) ? $this->container['channelId'] : null;
     }
 
     /**
@@ -570,7 +570,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getVersionId()
     {
-        return $this->container['versionId'];
+        return isset($this->container['versionId']) ? $this->container['versionId'] : null;
     }
 
     /**
@@ -594,7 +594,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceChannelType()
     {
-        return $this->container['serviceChannelType'];
+        return isset($this->container['serviceChannelType']) ? $this->container['serviceChannelType'] : null;
     }
 
     /**
@@ -618,7 +618,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getOrganizationId()
     {
-        return $this->container['organizationId'];
+        return isset($this->container['organizationId']) ? $this->container['organizationId'] : null;
     }
 
     /**
@@ -642,7 +642,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceChannelNames()
     {
-        return $this->container['serviceChannelNames'];
+        return isset($this->container['serviceChannelNames']) ? $this->container['serviceChannelNames'] : null;
     }
 
     /**
@@ -666,7 +666,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getAreas()
     {
-        return $this->container['areas'];
+        return isset($this->container['areas']) ? $this->container['areas'] : null;
     }
 
     /**
@@ -690,7 +690,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getServices()
     {
-        return $this->container['services'];
+        return isset($this->container['services']) ? $this->container['services'] : null;
     }
 
     /**
@@ -714,7 +714,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getServiceCollections()
     {
-        return $this->container['serviceCollections'];
+        return isset($this->container['serviceCollections']) ? $this->container['serviceCollections'] : null;
     }
 
     /**
@@ -738,7 +738,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getPublishingStatus()
     {
-        return $this->container['publishingStatus'];
+        return isset($this->container['publishingStatus']) ? $this->container['publishingStatus'] : null;
     }
 
     /**
@@ -762,7 +762,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getModified()
     {
-        return $this->container['modified'];
+        return isset($this->container['modified']) ? $this->container['modified'] : null;
     }
 
     /**
@@ -786,7 +786,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getResponsibleSoteOrganization()
     {
-        return $this->container['responsibleSoteOrganization'];
+        return isset($this->container['responsibleSoteOrganization']) ? $this->container['responsibleSoteOrganization'] : null;
     }
 
     /**
@@ -810,7 +810,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getOntologyTerms()
     {
-        return $this->container['ontologyTerms'];
+        return isset($this->container['ontologyTerms']) ? $this->container['ontologyTerms'] : null;
     }
 
     /**
@@ -834,7 +834,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getAreaMunicipalities()
     {
-        return $this->container['areaMunicipalities'];
+        return isset($this->container['areaMunicipalities']) ? $this->container['areaMunicipalities'] : null;
     }
 
     /**
@@ -858,7 +858,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getIsVisibleForAll()
     {
-        return $this->container['isVisibleForAll'];
+        return isset($this->container['isVisibleForAll']) ? $this->container['isVisibleForAll'] : null;
     }
 
     /**
@@ -882,7 +882,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getSecurity()
     {
-        return $this->container['security'];
+        return isset($this->container['security']) ? $this->container['security'] : null;
     }
 
     /**
@@ -906,7 +906,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getAvailableLanguages()
     {
-        return $this->container['availableLanguages'];
+        return isset($this->container['availableLanguages']) ? $this->container['availableLanguages'] : null;
     }
 
     /**
@@ -930,7 +930,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getPhoneNumbers()
     {
-        return $this->container['phoneNumbers'];
+        return isset($this->container['phoneNumbers']) ? $this->container['phoneNumbers'] : null;
     }
 
     /**
@@ -954,7 +954,7 @@ class V11VmOpenApiPhoneChannel implements ModelInterface, ArrayAccess
      */
     public function getSupportPhones()
     {
-        return $this->container['supportPhones'];
+        return isset($this->container['supportPhones']) ? $this->container['supportPhones'] : null;
     }
 
     /**

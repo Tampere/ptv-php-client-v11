@@ -228,7 +228,7 @@ class VmOpenApiArchivedServiceBase implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class VmOpenApiArchivedServiceBase implements ModelInterface, ArrayAccess
      */
     public function getOrganizationId()
     {
-        return $this->container['organizationId'];
+        return isset($this->container['organizationId']) ? $this->container['organizationId'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class VmOpenApiArchivedServiceBase implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class VmOpenApiArchivedServiceBase implements ModelInterface, ArrayAccess
      */
     public function getArchivingDate()
     {
-        return $this->container['archivingDate'];
+        return isset($this->container['archivingDate']) ? $this->container['archivingDate'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class VmOpenApiArchivedServiceBase implements ModelInterface, ArrayAccess
      */
     public function getServiceNames()
     {
-        return $this->container['serviceNames'];
+        return isset($this->container['serviceNames']) ? $this->container['serviceNames'] : null;
     }
 
     /**

@@ -234,7 +234,7 @@ class V10VmOpenApiServiceCollectionItem implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -258,7 +258,7 @@ class V10VmOpenApiServiceCollectionItem implements ModelInterface, ArrayAccess
      */
     public function getServiceCollectionNames()
     {
-        return $this->container['serviceCollectionNames'];
+        return isset($this->container['serviceCollectionNames']) ? $this->container['serviceCollectionNames'] : null;
     }
 
     /**
@@ -282,7 +282,7 @@ class V10VmOpenApiServiceCollectionItem implements ModelInterface, ArrayAccess
      */
     public function getServiceCollectionDescriptions()
     {
-        return $this->container['serviceCollectionDescriptions'];
+        return isset($this->container['serviceCollectionDescriptions']) ? $this->container['serviceCollectionDescriptions'] : null;
     }
 
     /**
@@ -306,7 +306,7 @@ class V10VmOpenApiServiceCollectionItem implements ModelInterface, ArrayAccess
      */
     public function getServices()
     {
-        return $this->container['services'];
+        return isset($this->container['services']) ? $this->container['services'] : null;
     }
 
     /**
@@ -330,7 +330,7 @@ class V10VmOpenApiServiceCollectionItem implements ModelInterface, ArrayAccess
      */
     public function getServiceChannels()
     {
-        return $this->container['serviceChannels'];
+        return isset($this->container['serviceChannels']) ? $this->container['serviceChannels'] : null;
     }
 
     /**
@@ -354,7 +354,7 @@ class V10VmOpenApiServiceCollectionItem implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**

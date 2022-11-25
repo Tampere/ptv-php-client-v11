@@ -234,7 +234,7 @@ class V9VmOpenApiExtraType implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -258,7 +258,7 @@ class V9VmOpenApiExtraType implements ModelInterface, ArrayAccess
      */
     public function getCode()
     {
-        return $this->container['code'];
+        return isset($this->container['code']) ? $this->container['code'] : null;
     }
 
     /**
@@ -282,7 +282,7 @@ class V9VmOpenApiExtraType implements ModelInterface, ArrayAccess
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -306,7 +306,7 @@ class V9VmOpenApiExtraType implements ModelInterface, ArrayAccess
      */
     public function getServiceGuid()
     {
-        return $this->container['serviceGuid'];
+        return isset($this->container['serviceGuid']) ? $this->container['serviceGuid'] : null;
     }
 
     /**
@@ -330,7 +330,7 @@ class V9VmOpenApiExtraType implements ModelInterface, ArrayAccess
      */
     public function getChannelGuid()
     {
-        return $this->container['channelGuid'];
+        return isset($this->container['channelGuid']) ? $this->container['channelGuid'] : null;
     }
 
     /**
@@ -354,7 +354,7 @@ class V9VmOpenApiExtraType implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**

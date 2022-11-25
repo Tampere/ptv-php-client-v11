@@ -243,7 +243,7 @@ class VmOpenApiAddressOther implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -267,7 +267,7 @@ class VmOpenApiAddressOther implements ModelInterface, ArrayAccess
      */
     public function getPostalCode()
     {
-        return $this->container['postalCode'];
+        return isset($this->container['postalCode']) ? $this->container['postalCode'] : null;
     }
 
     /**
@@ -291,7 +291,7 @@ class VmOpenApiAddressOther implements ModelInterface, ArrayAccess
      */
     public function getPostOffice()
     {
-        return $this->container['postOffice'];
+        return isset($this->container['postOffice']) ? $this->container['postOffice'] : null;
     }
 
     /**
@@ -315,7 +315,7 @@ class VmOpenApiAddressOther implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -339,7 +339,7 @@ class VmOpenApiAddressOther implements ModelInterface, ArrayAccess
      */
     public function getLatitude()
     {
-        return $this->container['latitude'];
+        return isset($this->container['latitude']) ? $this->container['latitude'] : null;
     }
 
     /**
@@ -363,7 +363,7 @@ class VmOpenApiAddressOther implements ModelInterface, ArrayAccess
      */
     public function getLongitude()
     {
-        return $this->container['longitude'];
+        return isset($this->container['longitude']) ? $this->container['longitude'] : null;
     }
 
     /**
@@ -387,7 +387,7 @@ class VmOpenApiAddressOther implements ModelInterface, ArrayAccess
      */
     public function getMunicipality()
     {
-        return $this->container['municipality'];
+        return isset($this->container['municipality']) ? $this->container['municipality'] : null;
     }
 
     /**
