@@ -210,7 +210,7 @@ class VmOpenApiCodeListItem implements ModelInterface, ArrayAccess
      */
     public function getCode()
     {
-        return $this->container['code'];
+        return isset($this->container['code']) ? $this->container['code'] : null;
     }
 
     /**
@@ -234,7 +234,7 @@ class VmOpenApiCodeListItem implements ModelInterface, ArrayAccess
      */
     public function getNames()
     {
-        return $this->container['names'];
+        return isset($this->container['names']) ? $this->container['names'] : null;
     }
 
     /**

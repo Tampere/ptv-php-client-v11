@@ -231,7 +231,7 @@ class V10VmOpenApiOrganizationService implements ModelInterface, ArrayAccess
      */
     public function getRoleType()
     {
-        return $this->container['roleType'];
+        return isset($this->container['roleType']) ? $this->container['roleType'] : null;
     }
 
     /**
@@ -255,7 +255,7 @@ class V10VmOpenApiOrganizationService implements ModelInterface, ArrayAccess
      */
     public function getProvisionType()
     {
-        return $this->container['provisionType'];
+        return isset($this->container['provisionType']) ? $this->container['provisionType'] : null;
     }
 
     /**
@@ -279,7 +279,7 @@ class V10VmOpenApiOrganizationService implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -303,7 +303,7 @@ class V10VmOpenApiOrganizationService implements ModelInterface, ArrayAccess
      */
     public function getService()
     {
-        return $this->container['service'];
+        return isset($this->container['service']) ? $this->container['service'] : null;
     }
 
     /**
@@ -327,7 +327,7 @@ class V10VmOpenApiOrganizationService implements ModelInterface, ArrayAccess
      */
     public function getOrganizationId()
     {
-        return $this->container['organizationId'];
+        return isset($this->container['organizationId']) ? $this->container['organizationId'] : null;
     }
 
     /**

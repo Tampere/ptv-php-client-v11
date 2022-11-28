@@ -237,7 +237,7 @@ class V9VmOpenApiServiceProducerIn implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -261,7 +261,7 @@ class V9VmOpenApiServiceProducerIn implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -285,7 +285,7 @@ class V9VmOpenApiServiceProducerIn implements ModelInterface, ArrayAccess
      */
     public function getProvisionType()
     {
-        return $this->container['provisionType'];
+        return isset($this->container['provisionType']) ? $this->container['provisionType'] : null;
     }
 
     /**
@@ -309,7 +309,7 @@ class V9VmOpenApiServiceProducerIn implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -333,7 +333,7 @@ class V9VmOpenApiServiceProducerIn implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**
@@ -357,7 +357,7 @@ class V9VmOpenApiServiceProducerIn implements ModelInterface, ArrayAccess
      */
     public function getOrganizations()
     {
-        return $this->container['organizations'];
+        return isset($this->container['organizations']) ? $this->container['organizations'] : null;
     }
 
     /**

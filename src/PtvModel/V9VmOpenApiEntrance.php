@@ -228,7 +228,7 @@ class V9VmOpenApiEntrance implements ModelInterface, ArrayAccess
      */
     public function getName()
     {
-        return $this->container['name'];
+        return isset($this->container['name']) ? $this->container['name'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class V9VmOpenApiEntrance implements ModelInterface, ArrayAccess
      */
     public function getIsMainEntrance()
     {
-        return $this->container['isMainEntrance'];
+        return isset($this->container['isMainEntrance']) ? $this->container['isMainEntrance'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class V9VmOpenApiEntrance implements ModelInterface, ArrayAccess
      */
     public function getCoordinates()
     {
-        return $this->container['coordinates'];
+        return isset($this->container['coordinates']) ? $this->container['coordinates'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class V9VmOpenApiEntrance implements ModelInterface, ArrayAccess
      */
     public function getAccessibilitySentences()
     {
-        return $this->container['accessibilitySentences'];
+        return isset($this->container['accessibilitySentences']) ? $this->container['accessibilitySentences'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class V9VmOpenApiEntrance implements ModelInterface, ArrayAccess
      */
     public function getContactInfo()
     {
-        return $this->container['contactInfo'];
+        return isset($this->container['contactInfo']) ? $this->container['contactInfo'] : null;
     }
 
     /**

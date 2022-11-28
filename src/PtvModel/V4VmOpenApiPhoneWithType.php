@@ -279,7 +279,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -303,7 +303,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getNumber()
     {
-        return $this->container['number'];
+        return isset($this->container['number']) ? $this->container['number'] : null;
     }
 
     /**
@@ -327,7 +327,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getLanguage()
     {
-        return $this->container['language'];
+        return isset($this->container['language']) ? $this->container['language'] : null;
     }
 
     /**
@@ -351,7 +351,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -375,7 +375,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId2()
     {
-        return $this->container['ownerReferenceId2'];
+        return isset($this->container['ownerReferenceId2']) ? $this->container['ownerReferenceId2'] : null;
     }
 
     /**
@@ -399,7 +399,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**
@@ -423,7 +423,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getPrefixNumber()
     {
-        return $this->container['prefixNumber'];
+        return isset($this->container['prefixNumber']) ? $this->container['prefixNumber'] : null;
     }
 
     /**
@@ -447,7 +447,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getIsFinnishServiceNumber()
     {
-        return $this->container['isFinnishServiceNumber'];
+        return isset($this->container['isFinnishServiceNumber']) ? $this->container['isFinnishServiceNumber'] : null;
     }
 
     /**
@@ -471,7 +471,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -495,7 +495,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**
@@ -519,7 +519,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getChargeDescription()
     {
-        return $this->container['chargeDescription'];
+        return isset($this->container['chargeDescription']) ? $this->container['chargeDescription'] : null;
     }
 
     /**
@@ -543,7 +543,7 @@ class V4VmOpenApiPhoneWithType implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**

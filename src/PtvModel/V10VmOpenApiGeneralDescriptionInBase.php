@@ -345,7 +345,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getSourceId()
     {
-        return $this->container['sourceId'];
+        return isset($this->container['sourceId']) ? $this->container['sourceId'] : null;
     }
 
     /**
@@ -369,7 +369,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getRequirements()
     {
-        return $this->container['requirements'];
+        return isset($this->container['requirements']) ? $this->container['requirements'] : null;
     }
 
     /**
@@ -393,7 +393,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getLegislation()
     {
-        return $this->container['legislation'];
+        return isset($this->container['legislation']) ? $this->container['legislation'] : null;
     }
 
     /**
@@ -417,7 +417,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getGeneralDescriptionType()
     {
-        return $this->container['generalDescriptionType'];
+        return isset($this->container['generalDescriptionType']) ? $this->container['generalDescriptionType'] : null;
     }
 
     /**
@@ -441,7 +441,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getGeneralDescriptionTypeId()
     {
-        return $this->container['generalDescriptionTypeId'];
+        return isset($this->container['generalDescriptionTypeId']) ? $this->container['generalDescriptionTypeId'] : null;
     }
 
     /**
@@ -465,7 +465,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getPublishingStatus()
     {
-        return $this->container['publishingStatus'];
+        return isset($this->container['publishingStatus']) ? $this->container['publishingStatus'] : null;
     }
 
     /**
@@ -489,7 +489,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getAvailableLanguages()
     {
-        return $this->container['availableLanguages'];
+        return isset($this->container['availableLanguages']) ? $this->container['availableLanguages'] : null;
     }
 
     /**
@@ -513,7 +513,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getVersionId()
     {
-        return $this->container['versionId'];
+        return isset($this->container['versionId']) ? $this->container['versionId'] : null;
     }
 
     /**
@@ -537,7 +537,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -561,7 +561,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getServiceClasses()
     {
-        return $this->container['serviceClasses'];
+        return isset($this->container['serviceClasses']) ? $this->container['serviceClasses'] : null;
     }
 
     /**
@@ -585,7 +585,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getOntologyTerms()
     {
-        return $this->container['ontologyTerms'];
+        return isset($this->container['ontologyTerms']) ? $this->container['ontologyTerms'] : null;
     }
 
     /**
@@ -609,7 +609,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getTargetGroups()
     {
-        return $this->container['targetGroups'];
+        return isset($this->container['targetGroups']) ? $this->container['targetGroups'] : null;
     }
 
     /**
@@ -633,7 +633,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getLifeEvents()
     {
-        return $this->container['lifeEvents'];
+        return isset($this->container['lifeEvents']) ? $this->container['lifeEvents'] : null;
     }
 
     /**
@@ -657,7 +657,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getIndustrialClasses()
     {
-        return $this->container['industrialClasses'];
+        return isset($this->container['industrialClasses']) ? $this->container['industrialClasses'] : null;
     }
 
     /**
@@ -681,7 +681,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getDeleteAllLifeEvents()
     {
-        return $this->container['deleteAllLifeEvents'];
+        return isset($this->container['deleteAllLifeEvents']) ? $this->container['deleteAllLifeEvents'] : null;
     }
 
     /**
@@ -705,7 +705,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getDeleteAllIndustrialClasses()
     {
-        return $this->container['deleteAllIndustrialClasses'];
+        return isset($this->container['deleteAllIndustrialClasses']) ? $this->container['deleteAllIndustrialClasses'] : null;
     }
 
     /**
@@ -729,7 +729,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getDeleteAllLaws()
     {
-        return $this->container['deleteAllLaws'];
+        return isset($this->container['deleteAllLaws']) ? $this->container['deleteAllLaws'] : null;
     }
 
     /**
@@ -753,7 +753,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getDeleteServiceChargeType()
     {
-        return $this->container['deleteServiceChargeType'];
+        return isset($this->container['deleteServiceChargeType']) ? $this->container['deleteServiceChargeType'] : null;
     }
 
     /**
@@ -777,7 +777,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getCurrentPublishingStatus()
     {
-        return $this->container['currentPublishingStatus'];
+        return isset($this->container['currentPublishingStatus']) ? $this->container['currentPublishingStatus'] : null;
     }
 
     /**
@@ -801,7 +801,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getRequiredPropertiesAvailableLanguages()
     {
-        return $this->container['requiredPropertiesAvailableLanguages'];
+        return isset($this->container['requiredPropertiesAvailableLanguages']) ? $this->container['requiredPropertiesAvailableLanguages'] : null;
     }
 
     /**
@@ -825,7 +825,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getNames()
     {
-        return $this->container['names'];
+        return isset($this->container['names']) ? $this->container['names'] : null;
     }
 
     /**
@@ -849,7 +849,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getDescriptions()
     {
-        return $this->container['descriptions'];
+        return isset($this->container['descriptions']) ? $this->container['descriptions'] : null;
     }
 
     /**
@@ -873,7 +873,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -897,7 +897,7 @@ class V10VmOpenApiGeneralDescriptionInBase implements ModelInterface, ArrayAcces
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**

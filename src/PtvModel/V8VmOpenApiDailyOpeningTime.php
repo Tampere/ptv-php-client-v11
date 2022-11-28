@@ -240,7 +240,7 @@ class V8VmOpenApiDailyOpeningTime implements ModelInterface, ArrayAccess
      */
     public function getDayFrom()
     {
-        return $this->container['dayFrom'];
+        return isset($this->container['dayFrom']) ? $this->container['dayFrom'] : null;
     }
 
     /**
@@ -264,7 +264,7 @@ class V8VmOpenApiDailyOpeningTime implements ModelInterface, ArrayAccess
      */
     public function getDayTo()
     {
-        return $this->container['dayTo'];
+        return isset($this->container['dayTo']) ? $this->container['dayTo'] : null;
     }
 
     /**
@@ -288,7 +288,7 @@ class V8VmOpenApiDailyOpeningTime implements ModelInterface, ArrayAccess
      */
     public function getFrom()
     {
-        return $this->container['from'];
+        return isset($this->container['from']) ? $this->container['from'] : null;
     }
 
     /**
@@ -312,7 +312,7 @@ class V8VmOpenApiDailyOpeningTime implements ModelInterface, ArrayAccess
      */
     public function getTo()
     {
-        return $this->container['to'];
+        return isset($this->container['to']) ? $this->container['to'] : null;
     }
 
     /**
@@ -336,7 +336,7 @@ class V8VmOpenApiDailyOpeningTime implements ModelInterface, ArrayAccess
      */
     public function getOrder()
     {
-        return $this->container['order'];
+        return isset($this->container['order']) ? $this->container['order'] : null;
     }
 
     /**
@@ -360,7 +360,7 @@ class V8VmOpenApiDailyOpeningTime implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**

@@ -204,7 +204,7 @@ class VmOpenApiSentenceValue implements ModelInterface, ArrayAccess
      */
     public function getSentence()
     {
-        return $this->container['sentence'];
+        return isset($this->container['sentence']) ? $this->container['sentence'] : null;
     }
 
     /**

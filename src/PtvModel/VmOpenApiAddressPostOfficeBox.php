@@ -240,7 +240,7 @@ class VmOpenApiAddressPostOfficeBox implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -264,7 +264,7 @@ class VmOpenApiAddressPostOfficeBox implements ModelInterface, ArrayAccess
      */
     public function getPostalCode()
     {
-        return $this->container['postalCode'];
+        return isset($this->container['postalCode']) ? $this->container['postalCode'] : null;
     }
 
     /**
@@ -288,7 +288,7 @@ class VmOpenApiAddressPostOfficeBox implements ModelInterface, ArrayAccess
      */
     public function getPostOffice()
     {
-        return $this->container['postOffice'];
+        return isset($this->container['postOffice']) ? $this->container['postOffice'] : null;
     }
 
     /**
@@ -312,7 +312,7 @@ class VmOpenApiAddressPostOfficeBox implements ModelInterface, ArrayAccess
      */
     public function getMunicipality()
     {
-        return $this->container['municipality'];
+        return isset($this->container['municipality']) ? $this->container['municipality'] : null;
     }
 
     /**
@@ -336,7 +336,7 @@ class VmOpenApiAddressPostOfficeBox implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -360,7 +360,7 @@ class VmOpenApiAddressPostOfficeBox implements ModelInterface, ArrayAccess
      */
     public function getPostOfficeBox()
     {
-        return $this->container['postOfficeBox'];
+        return isset($this->container['postOfficeBox']) ? $this->container['postOfficeBox'] : null;
     }
 
     /**

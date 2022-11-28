@@ -228,7 +228,7 @@ class V9VmOpenApiContactDetailsIn implements ModelInterface, ArrayAccess
      */
     public function getEmails()
     {
-        return $this->container['emails'];
+        return isset($this->container['emails']) ? $this->container['emails'] : null;
     }
 
     /**
@@ -252,7 +252,7 @@ class V9VmOpenApiContactDetailsIn implements ModelInterface, ArrayAccess
      */
     public function getFaxNumbers()
     {
-        return $this->container['faxNumbers'];
+        return isset($this->container['faxNumbers']) ? $this->container['faxNumbers'] : null;
     }
 
     /**
@@ -276,7 +276,7 @@ class V9VmOpenApiContactDetailsIn implements ModelInterface, ArrayAccess
      */
     public function getWebPages()
     {
-        return $this->container['webPages'];
+        return isset($this->container['webPages']) ? $this->container['webPages'] : null;
     }
 
     /**
@@ -300,7 +300,7 @@ class V9VmOpenApiContactDetailsIn implements ModelInterface, ArrayAccess
      */
     public function getAddresses()
     {
-        return $this->container['addresses'];
+        return isset($this->container['addresses']) ? $this->container['addresses'] : null;
     }
 
     /**
@@ -324,7 +324,7 @@ class V9VmOpenApiContactDetailsIn implements ModelInterface, ArrayAccess
      */
     public function getPhoneNumbers()
     {
-        return $this->container['phoneNumbers'];
+        return isset($this->container['phoneNumbers']) ? $this->container['phoneNumbers'] : null;
     }
 
     /**

@@ -222,7 +222,7 @@ class VmOpenApiTasks implements ModelInterface, ArrayAccess
      */
     public function getPageNumber()
     {
-        return $this->container['pageNumber'];
+        return isset($this->container['pageNumber']) ? $this->container['pageNumber'] : null;
     }
 
     /**
@@ -246,7 +246,7 @@ class VmOpenApiTasks implements ModelInterface, ArrayAccess
      */
     public function getPageSize()
     {
-        return $this->container['pageSize'];
+        return isset($this->container['pageSize']) ? $this->container['pageSize'] : null;
     }
 
     /**
@@ -270,7 +270,7 @@ class VmOpenApiTasks implements ModelInterface, ArrayAccess
      */
     public function getPageCount()
     {
-        return $this->container['pageCount'];
+        return isset($this->container['pageCount']) ? $this->container['pageCount'] : null;
     }
 
     /**
@@ -294,7 +294,7 @@ class VmOpenApiTasks implements ModelInterface, ArrayAccess
      */
     public function getItemList()
     {
-        return $this->container['itemList'];
+        return isset($this->container['itemList']) ? $this->container['itemList'] : null;
     }
 
     /**

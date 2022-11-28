@@ -249,7 +249,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getLanguage()
     {
-        return $this->container['language'];
+        return isset($this->container['language']) ? $this->container['language'] : null;
     }
 
     /**
@@ -273,7 +273,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -297,7 +297,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -321,7 +321,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId2()
     {
-        return $this->container['ownerReferenceId2'];
+        return isset($this->container['ownerReferenceId2']) ? $this->container['ownerReferenceId2'] : null;
     }
 
     /**
@@ -345,7 +345,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -369,7 +369,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getValue()
     {
-        return $this->container['value'];
+        return isset($this->container['value']) ? $this->container['value'] : null;
     }
 
     /**
@@ -393,7 +393,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getExistsOnePerLanguage()
     {
-        return $this->container['existsOnePerLanguage'];
+        return isset($this->container['existsOnePerLanguage']) ? $this->container['existsOnePerLanguage'] : null;
     }
 
     /**
@@ -417,7 +417,7 @@ class V4VmOpenApiEmail implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**

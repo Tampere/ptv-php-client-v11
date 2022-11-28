@@ -204,7 +204,7 @@ class IVmError implements ModelInterface, ArrayAccess
      */
     public function getErrorMessage()
     {
-        return $this->container['errorMessage'];
+        return isset($this->container['errorMessage']) ? $this->container['errorMessage'] : null;
     }
 
     /**

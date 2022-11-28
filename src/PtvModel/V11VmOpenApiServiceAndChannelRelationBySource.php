@@ -240,7 +240,7 @@ class V11VmOpenApiServiceAndChannelRelationBySource implements ModelInterface, A
      */
     public function getServiceSourceId()
     {
-        return $this->container['serviceSourceId'];
+        return isset($this->container['serviceSourceId']) ? $this->container['serviceSourceId'] : null;
     }
 
     /**
@@ -264,7 +264,7 @@ class V11VmOpenApiServiceAndChannelRelationBySource implements ModelInterface, A
      */
     public function getServiceChannelSourceId()
     {
-        return $this->container['serviceChannelSourceId'];
+        return isset($this->container['serviceChannelSourceId']) ? $this->container['serviceChannelSourceId'] : null;
     }
 
     /**
@@ -288,7 +288,7 @@ class V11VmOpenApiServiceAndChannelRelationBySource implements ModelInterface, A
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**
@@ -312,7 +312,7 @@ class V11VmOpenApiServiceAndChannelRelationBySource implements ModelInterface, A
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -336,7 +336,7 @@ class V11VmOpenApiServiceAndChannelRelationBySource implements ModelInterface, A
      */
     public function getServiceHours()
     {
-        return $this->container['serviceHours'];
+        return isset($this->container['serviceHours']) ? $this->container['serviceHours'] : null;
     }
 
     /**
@@ -360,7 +360,7 @@ class V11VmOpenApiServiceAndChannelRelationBySource implements ModelInterface, A
      */
     public function getContactDetails()
     {
-        return $this->container['contactDetails'];
+        return isset($this->container['contactDetails']) ? $this->container['contactDetails'] : null;
     }
 
     /**

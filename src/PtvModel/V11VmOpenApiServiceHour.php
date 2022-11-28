@@ -267,7 +267,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getServiceHourType()
     {
-        return $this->container['serviceHourType'];
+        return isset($this->container['serviceHourType']) ? $this->container['serviceHourType'] : null;
     }
 
     /**
@@ -291,7 +291,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getValidFrom()
     {
-        return $this->container['validFrom'];
+        return isset($this->container['validFrom']) ? $this->container['validFrom'] : null;
     }
 
     /**
@@ -315,7 +315,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getValidTo()
     {
-        return $this->container['validTo'];
+        return isset($this->container['validTo']) ? $this->container['validTo'] : null;
     }
 
     /**
@@ -339,7 +339,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getIsClosed()
     {
-        return $this->container['isClosed'];
+        return isset($this->container['isClosed']) ? $this->container['isClosed'] : null;
     }
 
     /**
@@ -363,7 +363,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getValidForNow()
     {
-        return $this->container['validForNow'];
+        return isset($this->container['validForNow']) ? $this->container['validForNow'] : null;
     }
 
     /**
@@ -387,7 +387,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getIsAlwaysOpen()
     {
-        return $this->container['isAlwaysOpen'];
+        return isset($this->container['isAlwaysOpen']) ? $this->container['isAlwaysOpen'] : null;
     }
 
     /**
@@ -411,7 +411,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getIsReservation()
     {
-        return $this->container['isReservation'];
+        return isset($this->container['isReservation']) ? $this->container['isReservation'] : null;
     }
 
     /**
@@ -435,7 +435,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getAdditionalInformation()
     {
-        return $this->container['additionalInformation'];
+        return isset($this->container['additionalInformation']) ? $this->container['additionalInformation'] : null;
     }
 
     /**
@@ -459,7 +459,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getOpeningHour()
     {
-        return $this->container['openingHour'];
+        return isset($this->container['openingHour']) ? $this->container['openingHour'] : null;
     }
 
     /**
@@ -483,7 +483,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getOrderNumber()
     {
-        return $this->container['orderNumber'];
+        return isset($this->container['orderNumber']) ? $this->container['orderNumber'] : null;
     }
 
     /**
@@ -507,7 +507,7 @@ class V11VmOpenApiServiceHour implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**

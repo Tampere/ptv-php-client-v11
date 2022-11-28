@@ -216,7 +216,7 @@ class V11VmOpenApiServiceAndChannelRelationAstiInBase implements ModelInterface,
      */
     public function getServiceId()
     {
-        return $this->container['serviceId'];
+        return isset($this->container['serviceId']) ? $this->container['serviceId'] : null;
     }
 
     /**
@@ -240,7 +240,7 @@ class V11VmOpenApiServiceAndChannelRelationAstiInBase implements ModelInterface,
      */
     public function getDeleteAllChannelRelations()
     {
-        return $this->container['deleteAllChannelRelations'];
+        return isset($this->container['deleteAllChannelRelations']) ? $this->container['deleteAllChannelRelations'] : null;
     }
 
     /**
@@ -264,7 +264,7 @@ class V11VmOpenApiServiceAndChannelRelationAstiInBase implements ModelInterface,
      */
     public function getChannelRelations()
     {
-        return $this->container['channelRelations'];
+        return isset($this->container['channelRelations']) ? $this->container['channelRelations'] : null;
     }
 
     /**

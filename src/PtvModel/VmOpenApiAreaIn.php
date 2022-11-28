@@ -222,7 +222,7 @@ class VmOpenApiAreaIn implements ModelInterface, ArrayAccess
      */
     public function getType()
     {
-        return $this->container['type'];
+        return isset($this->container['type']) ? $this->container['type'] : null;
     }
 
     /**
@@ -246,7 +246,7 @@ class VmOpenApiAreaIn implements ModelInterface, ArrayAccess
      */
     public function getAreaCodes()
     {
-        return $this->container['areaCodes'];
+        return isset($this->container['areaCodes']) ? $this->container['areaCodes'] : null;
     }
 
     /**
@@ -270,7 +270,7 @@ class VmOpenApiAreaIn implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**

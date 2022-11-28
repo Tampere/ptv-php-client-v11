@@ -258,7 +258,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getEmails()
     {
-        return $this->container['emails'];
+        return isset($this->container['emails']) ? $this->container['emails'] : null;
     }
 
     /**
@@ -282,7 +282,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getFaxNumbers()
     {
-        return $this->container['faxNumbers'];
+        return isset($this->container['faxNumbers']) ? $this->container['faxNumbers'] : null;
     }
 
     /**
@@ -306,7 +306,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getWebPages()
     {
-        return $this->container['webPages'];
+        return isset($this->container['webPages']) ? $this->container['webPages'] : null;
     }
 
     /**
@@ -330,7 +330,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getAddresses()
     {
-        return $this->container['addresses'];
+        return isset($this->container['addresses']) ? $this->container['addresses'] : null;
     }
 
     /**
@@ -354,7 +354,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getPhoneNumbers()
     {
-        return $this->container['phoneNumbers'];
+        return isset($this->container['phoneNumbers']) ? $this->container['phoneNumbers'] : null;
     }
 
     /**
@@ -378,7 +378,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllEmails()
     {
-        return $this->container['deleteAllEmails'];
+        return isset($this->container['deleteAllEmails']) ? $this->container['deleteAllEmails'] : null;
     }
 
     /**
@@ -402,7 +402,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllPhones()
     {
-        return $this->container['deleteAllPhones'];
+        return isset($this->container['deleteAllPhones']) ? $this->container['deleteAllPhones'] : null;
     }
 
     /**
@@ -426,7 +426,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllFaxNumbers()
     {
-        return $this->container['deleteAllFaxNumbers'];
+        return isset($this->container['deleteAllFaxNumbers']) ? $this->container['deleteAllFaxNumbers'] : null;
     }
 
     /**
@@ -450,7 +450,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllWebPages()
     {
-        return $this->container['deleteAllWebPages'];
+        return isset($this->container['deleteAllWebPages']) ? $this->container['deleteAllWebPages'] : null;
     }
 
     /**
@@ -474,7 +474,7 @@ class V9VmOpenApiContactDetailsInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllAddresses()
     {
-        return $this->container['deleteAllAddresses'];
+        return isset($this->container['deleteAllAddresses']) ? $this->container['deleteAllAddresses'] : null;
     }
 
     /**

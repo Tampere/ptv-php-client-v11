@@ -297,7 +297,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getSourceId()
     {
-        return $this->container['sourceId'];
+        return isset($this->container['sourceId']) ? $this->container['sourceId'] : null;
     }
 
     /**
@@ -321,7 +321,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getServiceCollectionNames()
     {
-        return $this->container['serviceCollectionNames'];
+        return isset($this->container['serviceCollectionNames']) ? $this->container['serviceCollectionNames'] : null;
     }
 
     /**
@@ -345,7 +345,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getPublishingStatus()
     {
-        return $this->container['publishingStatus'];
+        return isset($this->container['publishingStatus']) ? $this->container['publishingStatus'] : null;
     }
 
     /**
@@ -369,7 +369,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getAvailableLanguages()
     {
-        return $this->container['availableLanguages'];
+        return isset($this->container['availableLanguages']) ? $this->container['availableLanguages'] : null;
     }
 
     /**
@@ -393,7 +393,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getVersionId()
     {
-        return $this->container['versionId'];
+        return isset($this->container['versionId']) ? $this->container['versionId'] : null;
     }
 
     /**
@@ -417,7 +417,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -441,7 +441,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getCurrentPublishingStatus()
     {
-        return $this->container['currentPublishingStatus'];
+        return isset($this->container['currentPublishingStatus']) ? $this->container['currentPublishingStatus'] : null;
     }
 
     /**
@@ -465,7 +465,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getOrganizationId()
     {
-        return $this->container['organizationId'];
+        return isset($this->container['organizationId']) ? $this->container['organizationId'] : null;
     }
 
     /**
@@ -489,7 +489,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getServices()
     {
-        return $this->container['services'];
+        return isset($this->container['services']) ? $this->container['services'] : null;
     }
 
     /**
@@ -513,7 +513,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getServiceCollectionServices()
     {
-        return $this->container['serviceCollectionServices'];
+        return isset($this->container['serviceCollectionServices']) ? $this->container['serviceCollectionServices'] : null;
     }
 
     /**
@@ -537,7 +537,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getServiceCollectionChannels()
     {
-        return $this->container['serviceCollectionChannels'];
+        return isset($this->container['serviceCollectionChannels']) ? $this->container['serviceCollectionChannels'] : null;
     }
 
     /**
@@ -561,7 +561,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllServices()
     {
-        return $this->container['deleteAllServices'];
+        return isset($this->container['deleteAllServices']) ? $this->container['deleteAllServices'] : null;
     }
 
     /**
@@ -585,7 +585,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getDeleteAllChannels()
     {
-        return $this->container['deleteAllChannels'];
+        return isset($this->container['deleteAllChannels']) ? $this->container['deleteAllChannels'] : null;
     }
 
     /**
@@ -609,7 +609,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getRequiredPropertiesAvailableLanguages()
     {
-        return $this->container['requiredPropertiesAvailableLanguages'];
+        return isset($this->container['requiredPropertiesAvailableLanguages']) ? $this->container['requiredPropertiesAvailableLanguages'] : null;
     }
 
     /**
@@ -633,7 +633,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getServiceCollectionDescriptions()
     {
-        return $this->container['serviceCollectionDescriptions'];
+        return isset($this->container['serviceCollectionDescriptions']) ? $this->container['serviceCollectionDescriptions'] : null;
     }
 
     /**
@@ -657,7 +657,7 @@ class V11VmOpenApiServiceCollectionInBase implements ModelInterface, ArrayAccess
      */
     public function getServiceChannels()
     {
-        return $this->container['serviceChannels'];
+        return isset($this->container['serviceChannels']) ? $this->container['serviceChannels'] : null;
     }
 
     /**

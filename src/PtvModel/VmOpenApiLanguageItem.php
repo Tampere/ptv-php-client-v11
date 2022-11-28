@@ -234,7 +234,7 @@ class VmOpenApiLanguageItem implements ModelInterface, ArrayAccess
      */
     public function getValue()
     {
-        return $this->container['value'];
+        return isset($this->container['value']) ? $this->container['value'] : null;
     }
 
     /**
@@ -258,7 +258,7 @@ class VmOpenApiLanguageItem implements ModelInterface, ArrayAccess
      */
     public function getLanguage()
     {
-        return $this->container['language'];
+        return isset($this->container['language']) ? $this->container['language'] : null;
     }
 
     /**
@@ -282,7 +282,7 @@ class VmOpenApiLanguageItem implements ModelInterface, ArrayAccess
      */
     public function getId()
     {
-        return $this->container['id'];
+        return isset($this->container['id']) ? $this->container['id'] : null;
     }
 
     /**
@@ -306,7 +306,7 @@ class VmOpenApiLanguageItem implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId()
     {
-        return $this->container['ownerReferenceId'];
+        return isset($this->container['ownerReferenceId']) ? $this->container['ownerReferenceId'] : null;
     }
 
     /**
@@ -330,7 +330,7 @@ class VmOpenApiLanguageItem implements ModelInterface, ArrayAccess
      */
     public function getOwnerReferenceId2()
     {
-        return $this->container['ownerReferenceId2'];
+        return isset($this->container['ownerReferenceId2']) ? $this->container['ownerReferenceId2'] : null;
     }
 
     /**

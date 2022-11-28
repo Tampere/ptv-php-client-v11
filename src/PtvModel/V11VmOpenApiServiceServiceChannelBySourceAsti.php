@@ -267,7 +267,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getServiceChannelSourceId()
     {
-        return $this->container['serviceChannelSourceId'];
+        return isset($this->container['serviceChannelSourceId']) ? $this->container['serviceChannelSourceId'] : null;
     }
 
     /**
@@ -291,7 +291,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return isset($this->container['description']) ? $this->container['description'] : null;
     }
 
     /**
@@ -315,7 +315,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getServiceChargeType()
     {
-        return $this->container['serviceChargeType'];
+        return isset($this->container['serviceChargeType']) ? $this->container['serviceChargeType'] : null;
     }
 
     /**
@@ -339,7 +339,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getExtraTypes()
     {
-        return $this->container['extraTypes'];
+        return isset($this->container['extraTypes']) ? $this->container['extraTypes'] : null;
     }
 
     /**
@@ -363,7 +363,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getServiceHours()
     {
-        return $this->container['serviceHours'];
+        return isset($this->container['serviceHours']) ? $this->container['serviceHours'] : null;
     }
 
     /**
@@ -387,7 +387,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getContactDetails()
     {
-        return $this->container['contactDetails'];
+        return isset($this->container['contactDetails']) ? $this->container['contactDetails'] : null;
     }
 
     /**
@@ -411,7 +411,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getDeleteServiceChargeType()
     {
-        return $this->container['deleteServiceChargeType'];
+        return isset($this->container['deleteServiceChargeType']) ? $this->container['deleteServiceChargeType'] : null;
     }
 
     /**
@@ -435,7 +435,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getDeleteAllDescriptions()
     {
-        return $this->container['deleteAllDescriptions'];
+        return isset($this->container['deleteAllDescriptions']) ? $this->container['deleteAllDescriptions'] : null;
     }
 
     /**
@@ -459,7 +459,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getDeleteAllExtraTypes()
     {
-        return $this->container['deleteAllExtraTypes'];
+        return isset($this->container['deleteAllExtraTypes']) ? $this->container['deleteAllExtraTypes'] : null;
     }
 
     /**
@@ -483,7 +483,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getDeleteAllServiceHours()
     {
-        return $this->container['deleteAllServiceHours'];
+        return isset($this->container['deleteAllServiceHours']) ? $this->container['deleteAllServiceHours'] : null;
     }
 
     /**
@@ -507,7 +507,7 @@ class V11VmOpenApiServiceServiceChannelBySourceAsti implements ModelInterface, A
      */
     public function getIsASTIConnection()
     {
-        return $this->container['isASTIConnection'];
+        return isset($this->container['isASTIConnection']) ? $this->container['isASTIConnection'] : null;
     }
 
     /**
