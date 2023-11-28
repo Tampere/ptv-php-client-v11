@@ -85,6 +85,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
         'displayNameType' => '\Tampere\PtvV11\PtvModel\VmOpenApiNameTypeByLanguage[]',
         'phoneNumbers' => '\Tampere\PtvV11\PtvModel\V4VmOpenApiPhoneWithType[]',
         'supportEmails' => '\Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[]',
+        'emails' => '\Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[]',
         'addresses' => '\Tampere\PtvV11\PtvModel\V9VmOpenApiAddressLocation[]',
         'supportPhones' => '\Tampere\PtvV11\PtvModel\V4VmOpenApiPhone[]'
     ];
@@ -124,6 +125,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
         'displayNameType' => null,
         'phoneNumbers' => null,
         'supportEmails' => null,
+        'emails' => null,
         'addresses' => null,
         'supportPhones' => null
     ];
@@ -161,6 +163,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
 		'displayNameType' => true,
 		'phoneNumbers' => true,
 		'supportEmails' => true,
+		'emails' => true,
 		'addresses' => true,
 		'supportPhones' => true
     ];
@@ -278,6 +281,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
         'displayNameType' => 'displayNameType',
         'phoneNumbers' => 'phoneNumbers',
         'supportEmails' => 'supportEmails',
+        'emails' => 'emails',
         'addresses' => 'addresses',
         'supportPhones' => 'supportPhones'
     ];
@@ -315,6 +319,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
         'displayNameType' => 'setDisplayNameType',
         'phoneNumbers' => 'setPhoneNumbers',
         'supportEmails' => 'setSupportEmails',
+        'emails' => 'setEmails',
         'addresses' => 'setAddresses',
         'supportPhones' => 'setSupportPhones'
     ];
@@ -352,6 +357,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
         'displayNameType' => 'getDisplayNameType',
         'phoneNumbers' => 'getPhoneNumbers',
         'supportEmails' => 'getSupportEmails',
+        'emails' => 'getEmails',
         'addresses' => 'getAddresses',
         'supportPhones' => 'getSupportPhones'
     ];
@@ -440,6 +446,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
         $this->setIfExists('displayNameType', $data ?? [], null);
         $this->setIfExists('phoneNumbers', $data ?? [], null);
         $this->setIfExists('supportEmails', $data ?? [], null);
+        $this->setIfExists('emails', $data ?? [], null);
         $this->setIfExists('addresses', $data ?? [], null);
         $this->setIfExists('supportPhones', $data ?? [], null);
     }
@@ -983,7 +990,7 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
     /**
      * Sets serviceCollections
      *
-     * @param \Tampere\PtvV11\PtvModel\VmOpenApiServiceServiceCollection[]|null $serviceCollections 
+     * @param \Tampere\PtvV11\PtvModel\VmOpenApiServiceServiceCollection[]|null $serviceCollections
      *
      * @return self
      */
@@ -1392,6 +1399,40 @@ class V11VmOpenApiServiceLocationChannel implements ModelInterface, ArrayAccess,
             }
         }
         $this->container['supportEmails'] = $supportEmails;
+
+        return $this;
+    }
+
+    /**
+     * Gets emails
+     *
+     * @return \Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[]|null
+     */
+    public function getEmails()
+    {
+        return $this->container['emails'];
+    }
+
+    /**
+     * Sets emails
+     *
+     * @param \Tampere\PtvV11\PtvModel\VmOpenApiLanguageItem[]|null $emails List email addresses for the service channel.
+     *
+     * @return self
+     */
+    public function setEmails($emails)
+    {
+        if (is_null($emails)) {
+            array_push($this->openAPINullablesSetToNull, 'emails');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('emails', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
+        }
+        $this->container['emails'] = $emails;
 
         return $this;
     }
