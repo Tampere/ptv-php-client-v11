@@ -446,8 +446,8 @@ class V4VmOpenApiPhone implements ModelInterface, ArrayAccess, \JsonSerializable
         if ((mb_strlen($number) < 1)) {
             throw new \InvalidArgumentException('invalid length for $number when calling V4VmOpenApiPhone., must be bigger than or equal to 1.');
         }
-        if ((!preg_match("/^\\d{1,20}$/", $number))) {
-            throw new \InvalidArgumentException("invalid value for \$number when calling V4VmOpenApiPhone., must conform to the pattern /^\\d{1,20}$/.");
+        if ((!preg_match("/^\\+?\\d{1,20}$/", $number))) {
+            throw new \InvalidArgumentException("invalid value for \$number when calling V4VmOpenApiPhone., must conform to the pattern /^\\+?\\d{1,20}$/.");
         }
 
         $this->container['number'] = $number;
