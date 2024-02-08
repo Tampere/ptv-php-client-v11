@@ -1,4 +1,5 @@
 {
+    "name": "tampere/ptv-php-client-v11",
     "description": "Here you can see listed all the PTV Open Api methods.",
     "keywords": [
         "openapitools",
