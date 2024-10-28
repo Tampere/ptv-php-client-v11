@@ -6,6 +6,13 @@ For more information, please visit [https://palveluhallinta.suomi.fi/fi/sivut/pa
 
 ## Installation & Usage
 
+### Generating this package
+
+Use the following command, with the [configuration json file](ptv-client-generation-config-v11.json) copied from this repository.
+```bash
+openapi-generator generate -i https://api.palvelutietovaranto.suomi.fi/swagger/v11/swagger.json -g php -c ptv-client-generation-config-v11.json -o ptv-phpv8-client-v11
+```
+
 ### Requirements
 
 PHP 7.4 and later.
